@@ -1,0 +1,18 @@
+<pre>
+&lt;teacher&gt;
+name: <?php echo $this->teacherTitle.' '.$this->teacherName?> 
+birthday: <?php echo $this->teacherBirthDate?> 
+classes:
+<?php 
+foreach ($this->teacherClasses as $class) {
+	echo "\t$class";
+}
+?>
+
+
+&lt;student&gt;
+id: <?php echo $this->studentId?> 
+name: <?php echo $this->studentName?> 
+gender: <?php echo $this->studentGender?> 
+birthday: <?php echo $this->studentBirthDate?> 
+</pre>
